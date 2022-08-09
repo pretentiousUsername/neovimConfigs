@@ -18,3 +18,7 @@ repo.
 
 * Python
 
+* C
+
+* Haskell
+

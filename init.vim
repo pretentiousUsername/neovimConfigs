@@ -4,7 +4,6 @@ set nu "Line numbering
 "set bg= dark "Background for the editor as a whole ***NOT NECESSARY ONLY FOR
 "BACKUP***
 "colors desert "Set the text color scheme.
-colors wpgtkAlt
 set wrap "Line wrapping
 set lbr "Line wrapping at the word, extension of line 6
 filetype plugin on
@@ -13,7 +12,22 @@ syntax on
 
 set autoread "Make nvim read any new changes
 
-hi Conceal ctermbg=none ctermfg=none guibg=none guifg=none
+
+
+" See https://gist.github.com/romainl/379904f91fa40533175dfaec4c833f2f
+function! MyHighlights() abort
+	highlight LineNr cterm=NONE ctermbg=NONE ctermfg=13 gui=NONE guibg=NONE guifg=NONE
+	highlight Folded cterm=NONE ctermbg=0 ctermfg=6 gui=NONE guibg=NONE guifg=NONE
+	highlight SpellBad cterm=underline ctermbg=0 ctermfg=4 gui=NONE guibg=NONE guifg=NONE
+	highlight Conceal cterm=NONE ctermbg=0 ctermfg=5 gui=NONE guibg=NONE guifg=NONE
+endfunction
+
+augroup MyColors
+    autocmd!
+    autocmd ColorScheme * call MyHighlights()
+augroup END
+
+colors wpgtk
 
 nmap <C-P> "+gP
 vmap <C-C> "+y
