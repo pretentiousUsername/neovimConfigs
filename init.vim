@@ -20,6 +20,7 @@ function! MyHighlights() abort
 	highlight Folded cterm=NONE ctermbg=0 ctermfg=6 gui=NONE guibg=NONE guifg=NONE
 	highlight SpellBad cterm=underline ctermbg=0 ctermfg=4 gui=NONE guibg=NONE guifg=NONE
 	highlight Conceal cterm=NONE ctermbg=0 ctermfg=5 gui=NONE guibg=NONE guifg=NONE
+	hi Comment cterm=NONE ctermfg=4   ctermbg=0
 endfunction
 
 augroup MyColors
