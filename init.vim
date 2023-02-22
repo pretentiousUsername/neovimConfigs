@@ -1,14 +1,16 @@
 
 "------------------
 set nu "Line numbering
-"set bg= dark "Background for the editor as a whole ***NOT NECESSARY ONLY FOR
-"BACKUP***
-"colors desert "Set the text color scheme.
 set wrap "Line wrapping
 set lbr "Line wrapping at the word, extension of line 6
 filetype plugin on
 filetype indent on
 syntax on
+
+
+" Start package manager
+runtime bundle/vim-pathogen/autoload/pathogen.vim
+execute pathogen#infect()
 
 set autoread "Make nvim read any new changes
 
@@ -21,7 +23,9 @@ function! MyHighlights() abort
 	highlight SpellBad cterm=underline ctermbg=0 ctermfg=4 gui=NONE guibg=NONE guifg=NONE
 	highlight Conceal cterm=NONE ctermbg=0 ctermfg=5 gui=NONE guibg=NONE guifg=NONE
 	hi Comment cterm=NONE ctermfg=4   ctermbg=0
+	highlight Delimiter      ctermfg=15 ctermbg=0   guifg=White guibg=Black
 endfunction
+
 
 augroup MyColors
     autocmd!
@@ -30,6 +34,7 @@ augroup END
 
 colors wpgtk
 
+
 nmap <C-P> "+gP
 vmap <C-C> "+y
 
@@ -37,7 +42,7 @@ vmap <C-C> "+y
 " Plug
 " ----
 
-call plug#begin()
+"call plug#begin()
 
 " In order to install packages from Plug, type ":PlugInstall" when you
 " start up nvim
@@ -55,7 +60,5 @@ set nocompatible
 
 "inoremap <Space><Space> <Esc>/<Enter>"_c4l
 
-" Use this for the package manager
-runtime bundle/vim-pathogen/autoload/pathogen.vim
-execute pathogen#infect()
+
 

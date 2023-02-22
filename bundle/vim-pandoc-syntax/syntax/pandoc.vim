@@ -651,11 +651,11 @@ hi link pandocAbbreviationSeparator Identifier
 hi link pandocAbbreviationDefinition Comment
 
 hi link pandocFootnoteID Label
-hi link pandocFootnoteIDHead Type
-hi link pandocFootnoteIDTail Type
+hi link pandocFootnoteIDHead Identifier
+hi link pandocFootnoteIDTail Identifier
 hi link pandocFootnoteDef Comment
-hi link pandocFootnoteDefHead Type
-hi link pandocFootnoteDefTail Type
+hi link pandocFootnoteDefHead Identifier
+hi link pandocFootnoteDefTail Identifier
 hi link pandocFootnoteBlock Comment
 hi link pandocFootnoteBlockSeparator Operator
 

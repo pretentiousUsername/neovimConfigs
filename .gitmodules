@@ -22,3 +22,6 @@
 [submodule "bundle/wal.vim"]
 	path = bundle/wal.vim
 	url = https://github.com/dylanaraps/wal.vim
+[submodule "bundle/vim-easy-align"]
+	path = bundle/vim-easy-align
+	url = https://github.com/junegunn/vim-easy-align.git
