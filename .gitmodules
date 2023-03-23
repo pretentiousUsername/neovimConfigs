@@ -31,3 +31,9 @@
 [submodule "bundle/haskell-vim"]
 	path = bundle/haskell-vim
 	url = https://github.com/neovimhaskell/haskell-vim
+[submodule "bundle/nvim-tree.lua"]
+	path = bundle/nvim-tree.lua
+	url = https://github.com/nvim-tree/nvim-tree.lua
+[submodule "bundle/nvim-cmp"]
+	path = bundle/nvim-cmp
+	url = https://github.com/hrsh7th/nvim-cmp
