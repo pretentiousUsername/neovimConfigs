@@ -34,7 +34,7 @@ augroup MyColors
     autocmd ColorScheme * call MyHighlights()
 augroup END
 
-colors wpgtk
+"colors wpgtk
 
 
 nmap <C-P> "+gP
