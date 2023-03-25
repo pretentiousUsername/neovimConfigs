@@ -1,7 +1,12 @@
 # My *neovim* conifgs
 
+These configs are taken from ThePrimeagen's [video][nvimConf] on configuring neovim.
+
 These are the config files and plugins I use for [*neovim*][nvim], my text
 editor of choice. They're honestly nothing fancy at all.
+
+
+[nvimConf]: https://www.youtube.com/watch?v=w7i4amO_zaE
 
 [nvim]: https://neovim.io/
 
