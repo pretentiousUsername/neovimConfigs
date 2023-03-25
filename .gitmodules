@@ -40,3 +40,15 @@
 [submodule "bundle/bufferline.nvim"]
 	path = bundle/bufferline.nvim
 	url = https://github.com/akinsho/bufferline.nvim
+[submodule "lua/wbthomason"]
+	path = lua/wbthomason
+	url = https://github.com/wbthomason/packer.nvim
+[submodule "site/packer.nvim"]
+	path = site/packer.nvim
+	url = https://github.com/wbthomason/packer.nvim
+[submodule "site/wbthomason"]
+	path = site/wbthomason
+	url = https://github.com/wbthomason/packer.nvim
+[submodule "packer"]
+	path = packer
+	url = https://github.com/wbthomason/packer.nvim
