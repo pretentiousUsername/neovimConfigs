@@ -78,6 +78,26 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/ian/.local/share/nvim/site/pack/packer/start/packer.nvim",
     url = "https://github.com/wbthomason/packer.nvim"
+  },
+  ["vim-airline"] = {
+    loaded = true,
+    path = "/home/ian/.local/share/nvim/site/pack/packer/start/vim-airline",
+    url = "https://github.com/vim-airline/vim-airline"
+  },
+  ["vim-pandoc"] = {
+    loaded = true,
+    path = "/home/ian/.local/share/nvim/site/pack/packer/start/vim-pandoc",
+    url = "https://github.com/vim-pandoc/vim-pandoc"
+  },
+  ["vim-pandoc-syntax"] = {
+    loaded = true,
+    path = "/home/ian/.local/share/nvim/site/pack/packer/start/vim-pandoc-syntax",
+    url = "https://github.com/vim-pandoc/vim-pandoc-syntax"
+  },
+  ["wpgtk.vim"] = {
+    loaded = true,
+    path = "/home/ian/.local/share/nvim/site/pack/packer/start/wpgtk.vim",
+    url = "https://github.com/deviantfero/wpgtk.vim"
   }
 }
 
