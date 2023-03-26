@@ -74,10 +74,25 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
+  ["haskell-vim"] = {
+    loaded = true,
+    path = "/home/ian/.local/share/nvim/site/pack/packer/start/haskell-vim",
+    url = "https://github.com/neovimhaskell/haskell-vim"
+  },
+  ["julia-vim"] = {
+    loaded = true,
+    path = "/home/ian/.local/share/nvim/site/pack/packer/start/julia-vim",
+    url = "https://github.com/JuliaEditorSupport/julia-vim"
+  },
   ["packer.nvim"] = {
     loaded = true,
     path = "/home/ian/.local/share/nvim/site/pack/packer/start/packer.nvim",
     url = "https://github.com/wbthomason/packer.nvim"
+  },
+  ["rust.vim"] = {
+    loaded = true,
+    path = "/home/ian/.local/share/nvim/site/pack/packer/start/rust.vim",
+    url = "https://github.com/rust-lang/rust.vim"
   },
   ["vim-airline"] = {
     loaded = true,
@@ -93,6 +108,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/ian/.local/share/nvim/site/pack/packer/start/vim-pandoc-syntax",
     url = "https://github.com/vim-pandoc/vim-pandoc-syntax"
+  },
+  vimtex = {
+    loaded = true,
+    path = "/home/ian/.local/share/nvim/site/pack/packer/start/vimtex",
+    url = "https://github.com/lervag/vimtex"
   },
   ["wpgtk.vim"] = {
     loaded = true,

@@ -1,2 +1,2 @@
-require("pretentiousUsername.packer")
+require("pretentiousUsername.packages")
 require("pretentiousUsername.colors")

@@ -52,3 +52,6 @@
 [submodule "packer"]
 	path = packer
 	url = https://github.com/wbthomason/packer.nvim
+[submodule "pack/packer/start/packer.nvim"]
+	path = pack/packer/start/packer
+	url = https://github.com/wbthomason/packer.nvim
