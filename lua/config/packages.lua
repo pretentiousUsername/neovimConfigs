@@ -3,7 +3,10 @@
 return require('packer').startup(function(use)
   -- Packer can manage itself
   use 'wbthomason/packer.nvim'
-  use 'vim-airline/vim-airline'
+  use {
+	  'nvim-lualine/lualine.nvim',
+	  requires = { 'kyazdani42/nvim-web-devicons', opt = true }
+  }
   use 'vim-pandoc/vim-pandoc'
   use 'vim-pandoc/vim-pandoc-syntax'
   use 'deviantfero/wpgtk.vim' -- I want to make my own colorscheme soon

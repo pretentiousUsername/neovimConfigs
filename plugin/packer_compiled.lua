@@ -84,6 +84,17 @@ _G.packer_plugins = {
     path = "/home/ian/.local/share/nvim/site/pack/packer/start/julia-vim",
     url = "https://github.com/JuliaEditorSupport/julia-vim"
   },
+  ["lualine.nvim"] = {
+    loaded = true,
+    path = "/home/ian/.local/share/nvim/site/pack/packer/start/lualine.nvim",
+    url = "https://github.com/nvim-lualine/lualine.nvim"
+  },
+  ["nvim-web-devicons"] = {
+    loaded = false,
+    needs_bufread = false,
+    path = "/home/ian/.local/share/nvim/site/pack/packer/opt/nvim-web-devicons",
+    url = "https://github.com/kyazdani42/nvim-web-devicons"
+  },
   ["packer.nvim"] = {
     loaded = true,
     path = "/home/ian/.local/share/nvim/site/pack/packer/start/packer.nvim",
@@ -93,11 +104,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/ian/.local/share/nvim/site/pack/packer/start/rust.vim",
     url = "https://github.com/rust-lang/rust.vim"
-  },
-  ["vim-airline"] = {
-    loaded = true,
-    path = "/home/ian/.local/share/nvim/site/pack/packer/start/vim-airline",
-    url = "https://github.com/vim-airline/vim-airline"
   },
   ["vim-pandoc"] = {
     loaded = true,
