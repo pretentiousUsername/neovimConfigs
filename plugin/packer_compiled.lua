@@ -89,6 +89,11 @@ _G.packer_plugins = {
     path = "/home/ian/.local/share/nvim/site/pack/packer/start/lualine.nvim",
     url = "https://github.com/nvim-lualine/lualine.nvim"
   },
+  ["nvim-lspconfig"] = {
+    loaded = true,
+    path = "/home/ian/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
+    url = "https://github.com/neovim/nvim-lspconfig"
+  },
   ["nvim-web-devicons"] = {
     loaded = false,
     needs_bufread = false,
@@ -114,11 +119,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/ian/.local/share/nvim/site/pack/packer/start/vim-pandoc-syntax",
     url = "https://github.com/vim-pandoc/vim-pandoc-syntax"
-  },
-  vimtex = {
-    loaded = true,
-    path = "/home/ian/.local/share/nvim/site/pack/packer/start/vimtex",
-    url = "https://github.com/lervag/vimtex"
   },
   ["wpgtk.vim"] = {
     loaded = true,

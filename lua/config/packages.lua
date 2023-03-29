@@ -13,5 +13,6 @@ return require('packer').startup(function(use)
   use 'neovimhaskell/haskell-vim'
   use 'JuliaEditorSupport/julia-vim'
   use 'rust-lang/rust.vim'
-  use 'lervag/vimtex'
+  --use 'lervag/vimtex'
+  use 'neovim/nvim-lspconfig'
 end)

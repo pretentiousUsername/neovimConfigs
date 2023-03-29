@@ -1,8 +1,4 @@
-"s Vim colorscheme file
-" Maintainer:   Fernando Vásquez <fmorataya.04@gmail.com>
-" Last Change:  2001-09-25 07:48:15 Mountain Daylight Time
-" URL:          http://www.naglenet.org/vim/syntax/adrian.vim
-" MAIN URL:     http://www.naglenet.org/vim
+" Vim colorscheme file
 
 " This is my custom syntax file to override the defaults provided with Vim.
 " This file should be located in $HOME/vimfiles/colors.
@@ -21,9 +17,6 @@
 " operating system if the 'fileformats' is not empty and there is no <CR>
 " just before the <NL> on the first line.  See ':help :source_crnl' and
 " ':help fileformats'.
-"
-" *(3)
-" Move this file to adrian.vim for vim6.0aw.
 
 
 
@@ -38,7 +31,7 @@ let g:colors_name = "myScheme"
 hi Normal                 ctermfg=15  ctermbg=0
 hi User1                  cterm=none  ctermbg=6    ctermfg=15
 hi User2				  cterm=none  ctermbg=8    ctermfg=15
-hi Title                  cterm=none  ctermbg=none ctermfg=DarkGrey
+hi Title                  cterm=none  ctermbg=0    ctermfg=14
 hi TabLineFill            cterm=none  ctermbg=8    ctermfg=15
 hi TabLine                cterm=none  ctermbg=8    ctermfg=15
 hi TabLineSel             cterm=none  ctermbg=14   ctermfg=0
@@ -55,9 +48,9 @@ hi Specialkey             ctermfg=13  ctermbg=0
 hi ErrorMsg               ctermfg=0   ctermbg=9
 hi Pmenu                  ctermbg=8   ctermfg=15
 hi PmenuSel               ctermbg=14  ctermfg=0
-hi SpellBad               ctermfg=8   ctermbg=9    term=none
+hi SpellBad               ctermfg=8   ctermbg=0    cterm=underline
 hi Comment                ctermfg=4   ctermbg=0    cterm=none
-hi MatchParen             ctermfg=12  ctermbg=8   cterm=none
+hi MatchParen             ctermfg=12  ctermbg=0   cterm=none
 hi DiffAdd				  ctermfg=0
 hi DiffDelete			  ctermfg=0
 hi DiffText				  ctermfg=0
@@ -67,8 +60,9 @@ hi Special                ctermfg=9
 hi WarningMsg             ctermfg=10
 hi MoreMsg                ctermfg=15
 hi Directory              ctermfg=11
-hi Folded                 ctermfg=15  ctermbg=8
+hi Folded                 ctermfg=15  ctermbg=0
 hi Underlined             term=underline ctermfg=12
+hi Conceal                ctermfg=5 ctermbg=0
 
 highlight Constant   cterm=none      ctermfg=11   guifg=#ffa0a0
 "highlight Number   	 term=underline ctermfg=DarkGrey                     guifg=Yellow
@@ -93,9 +87,12 @@ highlight Float          ctermfg=14  guifg=#88AAEE
 highlight Exception      ctermfg=10 ctermbg=0 guifg=Red   guibg=White
 highlight Function       ctermfg=14
 highlight Typedef        ctermfg=10  ctermbg=8   gui=italic  guifg=White guibg=Blue
-highlight SpecialChar    ctermfg=12 ctermbg=8   guifg=Black guibg=White
-highlight Delimiter      ctermfg=15 ctermbg=8   guifg=White guibg=Black
+highlight SpecialChar    ctermfg=12 ctermbg=0   guifg=Black guibg=White
+highlight Delimiter      ctermfg=15 ctermbg=0   guifg=White guibg=Black
 highlight SpecialComment ctermfg=11 ctermbg=8   guifg=Black guibg=Green
+
+highlight Label          ctermfg=13 cterm=none term=none
+highlight Operator       ctermfg=13 cterm=none term=none
 
 " Common groups that link to default highlighting.
 " You can specify other highlighting easily.
@@ -107,8 +104,8 @@ highlight link String         Constant
 highlight link Character      Constant
 highlight link Boolean        Statement
 highlight link Repeat         Conditional
-highlight link Label          Type
-highlight link Operator       Type
+"highlight link Label          Type
+"highlight link Operator       Type
 highlight link Include        PreProc
 highlight link Define         PreProc
 highlight link Macro          PreProc
