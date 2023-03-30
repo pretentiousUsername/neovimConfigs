@@ -74,6 +74,11 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
+  ["SyntaxAttr.vim"] = {
+    loaded = true,
+    path = "/home/ian/.local/share/nvim/site/pack/packer/start/SyntaxAttr.vim",
+    url = "https://github.com/vim-scripts/SyntaxAttr.vim"
+  },
   ["haskell-vim"] = {
     loaded = true,
     path = "/home/ian/.local/share/nvim/site/pack/packer/start/haskell-vim",
@@ -88,11 +93,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/ian/.local/share/nvim/site/pack/packer/start/lualine.nvim",
     url = "https://github.com/nvim-lualine/lualine.nvim"
-  },
-  ["nvim-lspconfig"] = {
-    loaded = true,
-    path = "/home/ian/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
-    url = "https://github.com/neovim/nvim-lspconfig"
   },
   ["nvim-web-devicons"] = {
     loaded = false,
@@ -120,10 +120,10 @@ _G.packer_plugins = {
     path = "/home/ian/.local/share/nvim/site/pack/packer/start/vim-pandoc-syntax",
     url = "https://github.com/vim-pandoc/vim-pandoc-syntax"
   },
-  ["wpgtk.vim"] = {
+  vimtex = {
     loaded = true,
-    path = "/home/ian/.local/share/nvim/site/pack/packer/start/wpgtk.vim",
-    url = "https://github.com/deviantfero/wpgtk.vim"
+    path = "/home/ian/.local/share/nvim/site/pack/packer/start/vimtex",
+    url = "https://github.com/lervag/vimtex"
   }
 }
 

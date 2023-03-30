@@ -9,10 +9,9 @@ return require('packer').startup(function(use)
   }
   use 'vim-pandoc/vim-pandoc'
   use 'vim-pandoc/vim-pandoc-syntax'
-  use 'deviantfero/wpgtk.vim' -- I want to make my own colorscheme soon
   use 'neovimhaskell/haskell-vim'
   use 'JuliaEditorSupport/julia-vim'
   use 'rust-lang/rust.vim'
-  --use 'lervag/vimtex'
-  use 'neovim/nvim-lspconfig'
+  use 'lervag/vimtex'
+  use 'vim-scripts/SyntaxAttr.vim'
 end)
