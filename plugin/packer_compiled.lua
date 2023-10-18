@@ -49,8 +49,8 @@ local function save_profiles(threshold)
 end
 
 time([[Luarocks path setup]], true)
-local package_path_str = "/home/ian/.cache/nvim/packer_hererocks/2.1.0-beta3/share/lua/5.1/?.lua;/home/ian/.cache/nvim/packer_hererocks/2.1.0-beta3/share/lua/5.1/?/init.lua;/home/ian/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/luarocks/rocks-5.1/?.lua;/home/ian/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/luarocks/rocks-5.1/?/init.lua"
-local install_cpath_pattern = "/home/ian/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/lua/5.1/?.so"
+local package_path_str = "/home/pines/.cache/nvim/packer_hererocks/2.1.1696795921/share/lua/5.1/?.lua;/home/pines/.cache/nvim/packer_hererocks/2.1.1696795921/share/lua/5.1/?/init.lua;/home/pines/.cache/nvim/packer_hererocks/2.1.1696795921/lib/luarocks/rocks-5.1/?.lua;/home/pines/.cache/nvim/packer_hererocks/2.1.1696795921/lib/luarocks/rocks-5.1/?/init.lua"
+local install_cpath_pattern = "/home/pines/.cache/nvim/packer_hererocks/2.1.1696795921/lib/lua/5.1/?.so"
 if not string.find(package.path, package_path_str, 1, true) then
   package.path = package.path .. ';' .. package_path_str
 end
@@ -76,53 +76,68 @@ time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
   ["SyntaxAttr.vim"] = {
     loaded = true,
-    path = "/home/ian/.local/share/nvim/site/pack/packer/start/SyntaxAttr.vim",
+    path = "/home/pines/.local/share/nvim/site/pack/packer/start/SyntaxAttr.vim",
     url = "https://github.com/vim-scripts/SyntaxAttr.vim"
+  },
+  ["autoclose.nvim"] = {
+    loaded = true,
+    path = "/home/pines/.local/share/nvim/site/pack/packer/start/autoclose.nvim",
+    url = "https://github.com/m4xshen/autoclose.nvim"
   },
   ["haskell-vim"] = {
     loaded = true,
-    path = "/home/ian/.local/share/nvim/site/pack/packer/start/haskell-vim",
+    path = "/home/pines/.local/share/nvim/site/pack/packer/start/haskell-vim",
     url = "https://github.com/neovimhaskell/haskell-vim"
   },
   ["julia-vim"] = {
     loaded = true,
-    path = "/home/ian/.local/share/nvim/site/pack/packer/start/julia-vim",
+    path = "/home/pines/.local/share/nvim/site/pack/packer/start/julia-vim",
     url = "https://github.com/JuliaEditorSupport/julia-vim"
   },
   ["lualine.nvim"] = {
     loaded = true,
-    path = "/home/ian/.local/share/nvim/site/pack/packer/start/lualine.nvim",
+    path = "/home/pines/.local/share/nvim/site/pack/packer/start/lualine.nvim",
     url = "https://github.com/nvim-lualine/lualine.nvim"
   },
   ["nvim-web-devicons"] = {
     loaded = false,
     needs_bufread = false,
-    path = "/home/ian/.local/share/nvim/site/pack/packer/opt/nvim-web-devicons",
+    path = "/home/pines/.local/share/nvim/site/pack/packer/opt/nvim-web-devicons",
     url = "https://github.com/kyazdani42/nvim-web-devicons"
   },
   ["packer.nvim"] = {
     loaded = true,
-    path = "/home/ian/.local/share/nvim/site/pack/packer/start/packer.nvim",
+    path = "/home/pines/.local/share/nvim/site/pack/packer/start/packer.nvim",
     url = "https://github.com/wbthomason/packer.nvim"
+  },
+  ["quantum_espresso-vim"] = {
+    loaded = true,
+    path = "/home/pines/.local/share/nvim/site/pack/packer/start/quantum_espresso-vim",
+    url = "https://github.com/leseixas/quantum_espresso-vim"
   },
   ["rust.vim"] = {
     loaded = true,
-    path = "/home/ian/.local/share/nvim/site/pack/packer/start/rust.vim",
+    path = "/home/pines/.local/share/nvim/site/pack/packer/start/rust.vim",
     url = "https://github.com/rust-lang/rust.vim"
+  },
+  scvim = {
+    loaded = true,
+    path = "/home/pines/.local/share/nvim/site/pack/packer/start/scvim",
+    url = "https://github.com/supercollider/scvim"
   },
   ["vim-pandoc"] = {
     loaded = true,
-    path = "/home/ian/.local/share/nvim/site/pack/packer/start/vim-pandoc",
+    path = "/home/pines/.local/share/nvim/site/pack/packer/start/vim-pandoc",
     url = "https://github.com/vim-pandoc/vim-pandoc"
   },
   ["vim-pandoc-syntax"] = {
     loaded = true,
-    path = "/home/ian/.local/share/nvim/site/pack/packer/start/vim-pandoc-syntax",
+    path = "/home/pines/.local/share/nvim/site/pack/packer/start/vim-pandoc-syntax",
     url = "https://github.com/vim-pandoc/vim-pandoc-syntax"
   },
   vimtex = {
     loaded = true,
-    path = "/home/ian/.local/share/nvim/site/pack/packer/start/vimtex",
+    path = "/home/pines/.local/share/nvim/site/pack/packer/start/vimtex",
     url = "https://github.com/lervag/vimtex"
   }
 }

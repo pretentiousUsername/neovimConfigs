@@ -14,4 +14,7 @@ return require('packer').startup(function(use)
   use 'rust-lang/rust.vim'
   use 'lervag/vimtex'
   use 'vim-scripts/SyntaxAttr.vim'
+  use 'supercollider/scvim'
+  use 'leseixas/quantum_espresso-vim'
+  use 'm4xshen/autoclose.nvim'
 end)

@@ -64,7 +64,7 @@ hi Folded                 ctermfg=15  ctermbg=0
 hi Underlined             term=underline ctermfg=12
 hi Conceal                ctermfg=5 ctermbg=0
 
-highlight Constant   cterm=none      ctermfg=11   guifg=#ffa0a0
+highlight Constant   cterm=none      ctermfg=11   guifg=16
 "highlight Number   	 term=underline ctermfg=DarkGrey                     guifg=Yellow
 highlight Identifier ctermfg=12       cterm=none guifg=#40ffff
 highlight Statement  ctermfg=10  gui=bold  guifg=#ffff60
