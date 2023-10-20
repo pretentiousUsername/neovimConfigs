@@ -7,4 +7,9 @@ require("binds.copy")
 require("theming.colors")
 require("theming.lualine")
 
-require("autoclose").setup()
+require("autoclose").setup({
+    keys = {
+        ["'"] = { escape = true, close = false, pair = "''", disabled_filetypes = { "markdown", "text" } },
+    },
+
+})

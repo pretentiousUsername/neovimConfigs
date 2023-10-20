@@ -39,7 +39,8 @@ hi StatusLine             cterm=none  ctermbg=14   ctermfg=0
 hi StatusLineNC           cterm=none  ctermbg=8    ctermfg=15
 hi StatusLineTerm         cterm=none  ctermfg=12   ctermfg=0
 hi StatusLineTermNC       cterm=none  ctermbg=8    ctermfg=15
-hi CursorLine             ctermbg=0  ctermfg=15    cterm=none
+hi Cursor                 cterm=reverse
+hi CursorLine             ctermbg=0   ctermfg=15   cterm=none
 hi Visual                 ctermbg=14  ctermfg=0    cterm=none
 hi CursorLineNr           ctermbg=3   ctermfg=0    cterm=bold
 hi LineNr                 ctermfg=4   ctermbg=0
