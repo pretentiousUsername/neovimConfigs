@@ -17,4 +17,6 @@ return require('packer').startup(function(use)
   use 'supercollider/scvim'
   use 'leseixas/quantum_espresso-vim'
   use 'm4xshen/autoclose.nvim'
+  use 'vijaymarupudi/nvim-fzf'
+  use 'madskjeldgaard/faust-nvim'
 end)

@@ -84,6 +84,11 @@ _G.packer_plugins = {
     path = "/home/pines/.local/share/nvim/site/pack/packer/start/autoclose.nvim",
     url = "https://github.com/m4xshen/autoclose.nvim"
   },
+  ["faust-nvim"] = {
+    loaded = true,
+    path = "/home/pines/.local/share/nvim/site/pack/packer/start/faust-nvim",
+    url = "https://github.com/madskjeldgaard/faust-nvim"
+  },
   ["haskell-vim"] = {
     loaded = true,
     path = "/home/pines/.local/share/nvim/site/pack/packer/start/haskell-vim",
@@ -98,6 +103,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/pines/.local/share/nvim/site/pack/packer/start/lualine.nvim",
     url = "https://github.com/nvim-lualine/lualine.nvim"
+  },
+  ["nvim-fzf"] = {
+    loaded = true,
+    path = "/home/pines/.local/share/nvim/site/pack/packer/start/nvim-fzf",
+    url = "https://github.com/vijaymarupudi/nvim-fzf"
   },
   ["nvim-web-devicons"] = {
     loaded = false,

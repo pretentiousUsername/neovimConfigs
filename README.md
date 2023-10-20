@@ -26,3 +26,4 @@ ass—hopefully it'll pay off soon.
 + Julia
 + Haskell
 + Rust
++ Faust
