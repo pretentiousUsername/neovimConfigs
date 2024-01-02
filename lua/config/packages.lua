@@ -19,4 +19,5 @@ return require('packer').startup(function(use)
   use 'm4xshen/autoclose.nvim'
   use 'vijaymarupudi/nvim-fzf'
   use 'madskjeldgaard/faust-nvim'
+  use "nvim-lua/plenary.nvim"
 end)
