@@ -13,3 +13,11 @@ require("autoclose").setup({
     },
 
 })
+
+-- vim.filetype.add({ extension = { ['.pd_lua'] = "lua" } })
+-- using @9999years's answer from https://github.com/neovim/neovim/issues/23522
+vim.api.nvim_create_autocmd({ "BufRead", "BufNewFile" }, {
+    pattern = "*.pd_lua",
+    command = "setfiletype lua"
+}
+)
