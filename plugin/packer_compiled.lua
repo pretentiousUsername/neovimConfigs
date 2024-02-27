@@ -74,6 +74,11 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
+  LuaSnip = {
+    loaded = true,
+    path = "/home/pines/.local/share/nvim/site/pack/packer/start/LuaSnip",
+    url = "https://github.com/L3MON4D3/LuaSnip"
+  },
   ["SyntaxAttr.vim"] = {
     loaded = true,
     path = "/home/pines/.local/share/nvim/site/pack/packer/start/SyntaxAttr.vim",
@@ -84,15 +89,35 @@ _G.packer_plugins = {
     path = "/home/pines/.local/share/nvim/site/pack/packer/start/autoclose.nvim",
     url = "https://github.com/m4xshen/autoclose.nvim"
   },
+  ["coq.artifacts"] = {
+    loaded = true,
+    path = "/home/pines/.local/share/nvim/site/pack/packer/start/coq.artifacts",
+    url = "https://github.com/ms-jpq/coq.artifacts"
+  },
+  coq_nvim = {
+    loaded = true,
+    path = "/home/pines/.local/share/nvim/site/pack/packer/start/coq_nvim",
+    url = "https://github.com/ms-jpq/coq_nvim"
+  },
   ["faust-nvim"] = {
     loaded = true,
     path = "/home/pines/.local/share/nvim/site/pack/packer/start/faust-nvim",
     url = "https://github.com/madskjeldgaard/faust-nvim"
   },
+  ["fzf-lua"] = {
+    loaded = true,
+    path = "/home/pines/.local/share/nvim/site/pack/packer/start/fzf-lua",
+    url = "https://github.com/ibhagwan/fzf-lua"
+  },
   ["haskell-vim"] = {
     loaded = true,
     path = "/home/pines/.local/share/nvim/site/pack/packer/start/haskell-vim",
     url = "https://github.com/neovimhaskell/haskell-vim"
+  },
+  ["indent-blankline.nvim"] = {
+    loaded = true,
+    path = "/home/pines/.local/share/nvim/site/pack/packer/start/indent-blankline.nvim",
+    url = "https://github.com/lukas-reineke/indent-blankline.nvim"
   },
   ["julia-vim"] = {
     loaded = true,
@@ -104,10 +129,51 @@ _G.packer_plugins = {
     path = "/home/pines/.local/share/nvim/site/pack/packer/start/lualine.nvim",
     url = "https://github.com/nvim-lualine/lualine.nvim"
   },
+  ["lush.nvim"] = {
+    loaded = false,
+    needs_bufread = false,
+    path = "/home/pines/.local/share/nvim/site/pack/packer/opt/lush.nvim",
+    url = "https://github.com/rktjmp/lush.nvim"
+  },
+  lushwal = {
+    loaded = true,
+    path = "/home/pines/.local/share/nvim/site/pack/packer/start/lushwal",
+    url = "https://github.com/oncomouse/lushwal"
+  },
+  ["mason-lspconfig.nvim"] = {
+    loaded = true,
+    path = "/home/pines/.local/share/nvim/site/pack/packer/start/mason-lspconfig.nvim",
+    url = "https://github.com/williamboman/mason-lspconfig.nvim"
+  },
+  ["mason.nvim"] = {
+    loaded = true,
+    path = "/home/pines/.local/share/nvim/site/pack/packer/start/mason.nvim",
+    url = "https://github.com/williamboman/mason.nvim"
+  },
+  ["nvim-cmp"] = {
+    loaded = true,
+    path = "/home/pines/.local/share/nvim/site/pack/packer/start/nvim-cmp",
+    url = "https://github.com/hrsh7th/nvim-cmp"
+  },
   ["nvim-fzf"] = {
     loaded = true,
     path = "/home/pines/.local/share/nvim/site/pack/packer/start/nvim-fzf",
     url = "https://github.com/vijaymarupudi/nvim-fzf"
+  },
+  ["nvim-lspconfig"] = {
+    loaded = true,
+    path = "/home/pines/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
+    url = "https://github.com/neovim/nvim-lspconfig"
+  },
+  ["nvim-tree.lua"] = {
+    loaded = true,
+    path = "/home/pines/.local/share/nvim/site/pack/packer/start/nvim-tree.lua",
+    url = "https://github.com/nvim-tree/nvim-tree.lua"
+  },
+  ["nvim-treesitter"] = {
+    loaded = true,
+    path = "/home/pines/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
+    url = "https://github.com/nvim-treesitter/nvim-treesitter"
   },
   ["nvim-web-devicons"] = {
     loaded = false,
@@ -135,10 +201,26 @@ _G.packer_plugins = {
     path = "/home/pines/.local/share/nvim/site/pack/packer/start/rust.vim",
     url = "https://github.com/rust-lang/rust.vim"
   },
+  ["sc-scratchpad.nvim"] = {
+    loaded = true,
+    path = "/home/pines/.local/share/nvim/site/pack/packer/start/sc-scratchpad.nvim",
+    url = "https://github.com/madskjeldgaard/sc-scratchpad.nvim"
+  },
+  scnvim = {
+    loaded = true,
+    path = "/home/pines/.local/share/nvim/site/pack/packer/start/scnvim",
+    url = "https://github.com/davidgranstrom/scnvim"
+  },
   scvim = {
     loaded = true,
     path = "/home/pines/.local/share/nvim/site/pack/packer/start/scvim",
     url = "https://github.com/supercollider/scvim"
+  },
+  ["shipwright.nvim"] = {
+    loaded = false,
+    needs_bufread = false,
+    path = "/home/pines/.local/share/nvim/site/pack/packer/opt/shipwright.nvim",
+    url = "https://github.com/rktjmp/shipwright.nvim"
   },
   ["vim-pandoc"] = {
     loaded = true,
