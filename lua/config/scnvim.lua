@@ -29,4 +29,15 @@ scnvim.setup({
       enabled = false, -- floating postwin is annoying as shit.
     },
   },
+  
+  snippet = {
+      engine = {
+          name = 'luasnip',
+      },
+  },
+
+  documentation = {
+      --cmd = '/opt/homebrew/bin/pandoc',
+      cmd = '/usr/bin/pandoc',
+    },
 })

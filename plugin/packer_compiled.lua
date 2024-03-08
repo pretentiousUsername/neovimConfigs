@@ -89,6 +89,21 @@ _G.packer_plugins = {
     path = "/home/pines/.local/share/nvim/site/pack/packer/start/autoclose.nvim",
     url = "https://github.com/m4xshen/autoclose.nvim"
   },
+  ["cmp-nvim-lua"] = {
+    loaded = true,
+    path = "/home/pines/.local/share/nvim/site/pack/packer/start/cmp-nvim-lua",
+    url = "https://github.com/hrsh7th/cmp-nvim-lua"
+  },
+  ["cmp-path"] = {
+    loaded = true,
+    path = "/home/pines/.local/share/nvim/site/pack/packer/start/cmp-path",
+    url = "https://github.com/hrsh7th/cmp-path"
+  },
+  cmp_luasnip = {
+    loaded = true,
+    path = "/home/pines/.local/share/nvim/site/pack/packer/start/cmp_luasnip",
+    url = "https://github.com/saadparwaiz1/cmp_luasnip"
+  },
   ["coq.artifacts"] = {
     loaded = true,
     path = "/home/pines/.local/share/nvim/site/pack/packer/start/coq.artifacts",
@@ -181,6 +196,11 @@ _G.packer_plugins = {
     path = "/home/pines/.local/share/nvim/site/pack/packer/opt/nvim-web-devicons",
     url = "https://github.com/kyazdani42/nvim-web-devicons"
   },
+  ["oblique-strategies.nvim"] = {
+    loaded = true,
+    path = "/home/pines/.local/share/nvim/site/pack/packer/start/oblique-strategies.nvim",
+    url = "https://github.com/davidgranstrom/oblique-strategies.nvim"
+  },
   ["packer.nvim"] = {
     loaded = true,
     path = "/home/pines/.local/share/nvim/site/pack/packer/start/packer.nvim",
@@ -222,6 +242,16 @@ _G.packer_plugins = {
     path = "/home/pines/.local/share/nvim/site/pack/packer/opt/shipwright.nvim",
     url = "https://github.com/rktjmp/shipwright.nvim"
   },
+  ["telescope-scdoc.nvim"] = {
+    loaded = true,
+    path = "/home/pines/.local/share/nvim/site/pack/packer/start/telescope-scdoc.nvim",
+    url = "https://github.com/davidgranstrom/telescope-scdoc.nvim"
+  },
+  ["telescope.nvim"] = {
+    loaded = true,
+    path = "/home/pines/.local/share/nvim/site/pack/packer/start/telescope.nvim",
+    url = "https://github.com/nvim-telescope/telescope.nvim"
+  },
   ["vim-pandoc"] = {
     loaded = true,
     path = "/home/pines/.local/share/nvim/site/pack/packer/start/vim-pandoc",
@@ -236,6 +266,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/pines/.local/share/nvim/site/pack/packer/start/vimtex",
     url = "https://github.com/lervag/vimtex"
+  },
+  ["which-key.nvim"] = {
+    loaded = true,
+    path = "/home/pines/.local/share/nvim/site/pack/packer/start/which-key.nvim",
+    url = "https://github.com/folke/which-key.nvim"
   }
 }
 

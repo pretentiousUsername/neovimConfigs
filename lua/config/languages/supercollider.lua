@@ -1,4 +1,4 @@
--- vim.g.scnvim_sclang_options = {'-l', "/home/mads/.config/SuperCollider/sclang_conf_development.yaml"}
+vim.g.scnvim_sclang_options = {'-l', "~/.config/SuperCollider/sclang_conf.yaml"}
 
 vim.g.scnvim_postwin_syntax_hl = 1
 
@@ -17,7 +17,7 @@ vim.g.scnvim_postwin_size = 50
 -- automatically open post window on a SuperCollider error
 vim.g.scnvim_postwin_auto_toggle = 1
 
---	-- duration of the highlight
+-- duration of the highlight
 vim.g.scnvim_eval_flash_duration = 100
 
 -- number of flashes. A value of 0 disables this feature.

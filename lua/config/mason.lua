@@ -8,4 +8,8 @@ require('lspconfig').lua_ls.setup{}
 
 require('lspconfig').ruff_lsp.setup{}
 
---require('lspconfig').julials.setup{}
+--require('lspconfig').
+
+require('lspconfig').julials.setup{
+    julia_env_path = {}
+}

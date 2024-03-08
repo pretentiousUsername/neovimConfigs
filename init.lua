@@ -2,11 +2,15 @@ require("config.packages")
 require("config.misc_configs")
 require("config.scnvim")
 require("config.languages.supercollider")
+require("config.nvim-tree")
+require 'config.telescope'
+require("config.luasnip")
+require('config.nvim_cmp')
 --require("config.mason")
---require("config.treesitter")
 
-require("binds.mapFunction")
+require("binds.map_function")
 require("binds.copy")
+require("binds.tree_open")
 
 require("theming.colors")
 require("theming.lualine")
@@ -30,27 +34,20 @@ vim.api.nvim_create_autocmd({ "BufRead", "BufNewFile" }, {
 -- indent-blankline stuff
 require("ibl").setup()
 
+require('oblique-strategies').setup{
+  keymaps = {
+    show = {
+      n = '<F9>',
+    },
+  },
+}
 
------- nvim-tree.lua stuff
--- disable netrw at the very start of your init.lua
-vim.g.loaded_netrw = 1
-vim.g.loaded_netrwPlugin = 1
-
--- optionally enable 24-bit colour
---vim.opt.termguicolors = true
-
--- OR setup with some options
-require("nvim-tree").setup({
-  sort = {
-    sorter = "case_sensitive",
-  },
-  view = {
-    width = 30,
-  },
-  renderer = {
-    group_empty = true,
-  },
-  filters = {
-    dotfiles = true,
-  },
-})
+-[[require("lspconfig").julials.setup({
+    on_new_config = function(new_config, _)
+        local julia = vim.fn.expand("~/.julia/environments/nvim-lspconfig/bin/julia")
+        if require("lspconfig").util.path.is_file(julia) then
+            new_config.cmd[1] = julia
+        end
+    end,
+    -- ...
+})--]]
