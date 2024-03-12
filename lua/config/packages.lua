@@ -18,13 +18,11 @@ return require('packer').startup(function(use)
     use 'm4xshen/autoclose.nvim'
     use 'vijaymarupudi/nvim-fzf'
     use 'madskjeldgaard/faust-nvim'
-    use 'nvim-lua/plenary.nvim'
     use 'nvim-telescope/telescope.nvim'
     use {
         'davidgranstrom/scnvim',
         'davidgranstrom/telescope-scdoc.nvim',
         'madskjeldgaard/sc-scratchpad.nvim',
-
     }
     use {'nvim-treesitter/nvim-treesitter', version='v0.20.8'}
     use 'ibhagwan/fzf-lua'

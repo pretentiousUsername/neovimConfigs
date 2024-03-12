@@ -52,14 +52,14 @@ cmp.setup({
     },
     window = {
         -- completion = cmp.config.window.bordered(),
-        -- documentation = cmp.config.window.bordered(),
+        documentation = cmp.config.window.bordered(),
     },
     mapping = cmp.mapping.preset.insert({
         ['<C-b>'] = cmp.mapping.scroll_docs(-4),
         ['<C-f>'] = cmp.mapping.scroll_docs(4),
         ['<C-Space>'] = cmp.mapping.complete(),
         ['<C-e>'] = cmp.mapping.abort(),
-        ['<CR>'] = cmp.mapping.confirm({ select = true }), -- Accept currently selected item. Set `select` to `false` to only confirm explicitly selected items.
+        ['<Tab>'] = cmp.mapping.confirm({ select = true }), -- Accept currently selected item. Set `select` to `false` to only confirm explicitly selected items.
     }),
     sources = cmp.config.sources({
         --{ name = 'nvim_lsp' },
@@ -67,6 +67,7 @@ cmp.setup({
         { name = 'luasnip' }, -- For luasnip users.
         -- { name = 'ultisnips' }, -- For ultisnips users.
         -- { name = 'snippy' }, -- For snippy users.
+        { name = 'cmp_pandoc' },
     }, {
         { name = 'buffer' },
     }),
@@ -95,10 +96,6 @@ cmp.setup.filetype('gitcommit', {
     })
 })
 
-cmp.setup.filetype('markdown', {
-    sources = cmp.config.sources({})
-})
-
 -- Use buffer source for `/` and `?` (if you enabled `native_menu`, this won't work anymore).
 cmp.setup.cmdline({ '/', '?' }, {
     mapping = cmp.mapping.preset.cmdline(),
@@ -115,4 +112,29 @@ cmp.setup.cmdline(':', {
     }, {
         { name = 'cmdline' }
     })
+})
+
+require('cmp_pandoc').setup({
+  -- What types of files cmp-pandoc works.
+  -- 'pandoc', 'markdown' and 'rmd' (Rmarkdown)
+  -- @type: table of string
+  filetypes = { "pandoc", "markdown", "rmd" },
+  -- Customize bib documentation
+  bibliography = {
+    -- Enable bibliography documentation
+    -- @type: boolean
+    documentation = true,
+    -- Fields to show in documentation
+    -- @type: table of string
+    fields = { "type", "title", "author", "year" },
+  },
+  -- Crossref
+  crossref = {
+    -- Enable documetation
+    -- @type: boolean
+    documentation = true,
+    -- Use nabla.nvim to render LaTeX equation to ASCII
+    -- @type: boolean
+    enable_nabla = false,
+  }
 })

@@ -89,10 +89,20 @@ _G.packer_plugins = {
     path = "/home/pines/.local/share/nvim/site/pack/packer/start/autoclose.nvim",
     url = "https://github.com/m4xshen/autoclose.nvim"
   },
+  ["cmp-buffer"] = {
+    loaded = true,
+    path = "/home/pines/.local/share/nvim/site/pack/packer/start/cmp-buffer",
+    url = "https://github.com/hrsh7th/cmp-buffer"
+  },
   ["cmp-nvim-lua"] = {
     loaded = true,
     path = "/home/pines/.local/share/nvim/site/pack/packer/start/cmp-nvim-lua",
     url = "https://github.com/hrsh7th/cmp-nvim-lua"
+  },
+  ["cmp-pandoc.nvim"] = {
+    loaded = true,
+    path = "/home/pines/.local/share/nvim/site/pack/packer/start/cmp-pandoc.nvim",
+    url = "https://github.com/aspeddro/cmp-pandoc.nvim"
   },
   ["cmp-path"] = {
     loaded = true,

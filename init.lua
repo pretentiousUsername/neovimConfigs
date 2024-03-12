@@ -2,6 +2,7 @@ require("config.packages")
 require("config.misc_configs")
 require("config.scnvim")
 require("config.languages.supercollider")
+require("config.languages.markdown")
 require("config.nvim-tree")
 require 'config.telescope'
 require("config.luasnip")
@@ -32,7 +33,7 @@ vim.api.nvim_create_autocmd({ "BufRead", "BufNewFile" }, {
 )
 
 -- indent-blankline stuff
-require("ibl").setup()
+--require("ibl").setup()
 
 require('oblique-strategies').setup{
   keymaps = {
@@ -42,7 +43,34 @@ require('oblique-strategies').setup{
   },
 }
 
--[[require("lspconfig").julials.setup({
+--[[require('cmp-pandoc').setup{
+  -- What types of files cmp-pandoc works.
+  -- 'pandoc', 'markdown' and 'rmd' (Rmarkdown)
+  -- @type: table of string
+  filetypes = { "pandoc", "markdown", "rmd" },
+  -- Customize bib documentation
+  bibliography = {
+    -- Enable bibliography documentation
+    -- @type: boolean
+    documentation = true,
+    -- Fields to show in documentation
+    -- @type: table of string
+    fields = { "type", "title", "author", "year" },
+  },
+  -- Crossref
+  crossref = {
+    -- Enable documetation
+    -- @type: boolean
+    documentation = true,
+    -- Use nabla.nvim to render LaTeX equation to ASCII
+    -- @type: boolean
+    enable_nabla = false,
+  }
+}--]]
+
+--autocmd FileType tex :AcpDisable
+
+--[[require("lspconfig").julials.setup({
     on_new_config = function(new_config, _)
         local julia = vim.fn.expand("~/.julia/environments/nvim-lspconfig/bin/julia")
         if require("lspconfig").util.path.is_file(julia) then
