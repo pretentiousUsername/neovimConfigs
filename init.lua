@@ -13,11 +13,11 @@ require("binds.map_function")
 require("binds.copy")
 require("binds.tree_open")
 
-require("theming.colors")
-require("theming.lualine")
-
 local pywal = require('pywal')
 pywal.setup()
+
+require("theming.colors")
+require("theming.lualine")
 
 -- Autoclose stuff
 require("autoclose").setup({
