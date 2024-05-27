@@ -41,3 +41,5 @@ scnvim.setup({
       cmd = '/usr/bin/pandoc',
     },
 })
+
+scnvim.load_extension('fzf-sc')

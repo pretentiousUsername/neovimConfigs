@@ -16,6 +16,8 @@ require("binds.tree_open")
 require("theming.colors")
 require("theming.lualine")
 
+local pywal = require('pywal')
+pywal.setup()
 
 -- Autoclose stuff
 require("autoclose").setup({

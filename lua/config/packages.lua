@@ -23,6 +23,7 @@ return require('packer').startup(function(use)
         'davidgranstrom/scnvim',
         'davidgranstrom/telescope-scdoc.nvim',
         'madskjeldgaard/sc-scratchpad.nvim',
+        'madskjeldgaard/fzf-sc',
     }
     use {'nvim-treesitter/nvim-treesitter', version='v0.20.8'}
     use 'ibhagwan/fzf-lua'
@@ -60,4 +61,5 @@ return require('packer').startup(function(use)
     use 'davidgranstrom/oblique-strategies.nvim'
     --use 'anuvyklack/help-vsplit.nvim'
     --use 'tiagovla/scope.nvim'
+    use 'erdivartanovich/pywal.nvim'
 end)

@@ -1,3 +1,4 @@
+vim.cmd([[colorscheme vim]])
 vim.cmd([[colors myScheme]])
 --vim.cmd([[colors lushwal]])
 vim.cmd([[set cursorline]])
