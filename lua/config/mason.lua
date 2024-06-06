@@ -6,7 +6,21 @@ require('mason-lspconfig').setup({
 
 require('lspconfig').lua_ls.setup{}
 
-require('lspconfig').ruff_lsp.setup{}
+--require('lspconfig').ruff_lsp.setup{}
+
+require('lspconfig').pylsp.setup{
+    settings = {
+        pylsp = {
+            plugins = {
+                pycodestyle = {
+                    maxLineLength = 100,
+                    enabled = true,
+                    ignore = {"E221", "E251"},
+                },
+            }
+        }
+    }
+}
 
 --require('lspconfig').
 
