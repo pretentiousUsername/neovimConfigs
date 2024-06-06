@@ -10,6 +10,7 @@ require('lspconfig').ruff_lsp.setup{}
 
 --require('lspconfig').
 
-require('lspconfig').julials.setup{
-    julia_env_path = {}
-}
+-- Julials is really dang slow
+--require('lspconfig').julials.setup{
+    --julia_env_path = {}
+--}

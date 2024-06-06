@@ -5,9 +5,9 @@ require("config.languages.supercollider")
 require("config.languages.markdown")
 require("config.nvim-tree")
 require 'config.telescope'
-require("config.luasnip")
+require("config.snippets")
 require('config.nvim_cmp')
---require("config.mason")
+require("config.mason")
 
 require("binds.map_function")
 require("binds.copy")
