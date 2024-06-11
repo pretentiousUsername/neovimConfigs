@@ -22,10 +22,3 @@ vim.api.nvim_create_autocmd({"BufReadPre"}, {
         load_supercollider_snippets()
     end
 })
-
---[[vim.api.nvim_create_autocmd({"BufEnter", "BufWinEnter"}, {
-    pattern = "*.sc",
-    callback = function()
-        load_supercollider_snippets()
-    end
-})--]]
