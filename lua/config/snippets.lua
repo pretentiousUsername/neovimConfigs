@@ -16,16 +16,16 @@ end
 
 -- SCNvim's snippets take a pretty decent amount of time to load up, so this
 -- saves a decent amount of startup time for non-SC files.
-vim.api.nvim_create_autocmd({"BufEnter", "BufWinEnter"}, {
-    pattern = "*.scd",
+vim.api.nvim_create_autocmd({"BufReadPre"}, {
+    pattern = {"*.scd", "*.sc"},
     callback = function()
         load_supercollider_snippets()
     end
 })
 
-vim.api.nvim_create_autocmd({"BufEnter", "BufWinEnter"}, {
+--[[vim.api.nvim_create_autocmd({"BufEnter", "BufWinEnter"}, {
     pattern = "*.sc",
     callback = function()
         load_supercollider_snippets()
     end
-})
+})--]]
