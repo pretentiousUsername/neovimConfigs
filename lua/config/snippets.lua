@@ -13,7 +13,7 @@ if filetype == 'supercollider' then
     load_supercollider_snippets()
 end
 
-
+-- # Load SCNvim snippets on an scnvim file
 -- SCNvim's snippets take a pretty decent amount of time to load up, so this
 -- saves a decent amount of startup time for non-SC files.
 vim.api.nvim_create_autocmd({"BufReadPre"}, {
