@@ -18,6 +18,7 @@ scnvim.setup({
     ['<leader>sk'] = map('sclang.recompile'),
     ['<F1>'] = map_expr('s.boot'),
     ['<F2>'] = map_expr('s.mkter'),
+    ['<C-.'] = map_expr('CmdPeriod.run'),
   },
   editor = {
     highlight = {
