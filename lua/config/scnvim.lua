@@ -18,7 +18,8 @@ scnvim.setup({
     ['<leader>sk'] = map('sclang.recompile'),
     ['<F1>'] = map_expr('s.boot'),
     ['<F2>'] = map_expr('s.mkter'),
-    ['<C-.'] = map_expr('CmdPeriod.run'),
+    ['<M-.'] = map_expr([[CmdPeriod.run]]),--map_expr('CmdPeriod.run'),
+    ['<M-h>'] = map_expr([[HelpBrowser.new()]]),
   },
   editor = {
     highlight = {
