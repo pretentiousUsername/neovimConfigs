@@ -69,7 +69,15 @@ cmp.setup({
         -- { name = 'snippy' }, -- For snippy users.
         { name = 'cmp_pandoc' },
     }, {
-        { name = 'buffer' },
+        {
+            name = 'buffer',
+            entry_filter = function(entry, ctx)
+                local kind = vim.bo.filetype
+                if kind == "pandoc" then
+                    return false
+                end
+            end
+        },
     }),
     formatting = {
         fields = { "kind", "abbr", "menu" },
@@ -95,6 +103,14 @@ cmp.setup.filetype('gitcommit', {
         { name = 'buffer' },
     })
 })
+
+--[[cmp.setup.filetype('pandoc', {
+    source = cmp.config.sources({
+        { name = 'pandoc' },
+    },{
+        { name = 'buffer' }
+    })
+})--]]
 
 -- Use buffer source for `/` and `?` (if you enabled `native_menu`, this won't work anymore).
 cmp.setup.cmdline({ '/', '?' }, {
@@ -138,3 +154,9 @@ require('cmp_pandoc').setup({
     enable_nabla = false,
   }
 })
+
+--[[local capabilities = require('cmp_nvim_lsp').default_capabilities()
+-- Replace <YOUR_LSP_SERVER> with each lsp server you've enabled.
+require('lspconfig')['pylsp'].setup {
+  capabilities = capabilities
+}--]]
