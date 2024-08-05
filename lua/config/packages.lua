@@ -34,6 +34,7 @@ return require('packer').startup(function(use)
                          { "rktjmp/shipwright.nvim", opt = true }
             },
         }
+    use 'AlexvZyl/nordic.nvim'
     use {
         'williamboman/mason-lspconfig.nvim',
         'williamboman/mason.nvim',

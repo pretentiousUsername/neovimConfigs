@@ -3,6 +3,13 @@ if not cmp_status_ok then
     return
 end
 
+local function is_filetype(entry, ctx, filetype)
+    local kind = vim.bo.filetype
+    if kind == filetype then
+        return false
+    end
+end
+
 require("luasnip.loaders.from_vscode").lazy_load()
 
 local check_backspace = function()
@@ -71,12 +78,13 @@ cmp.setup({
     }, {
         {
             name = 'buffer',
-            entry_filter = function(entry, ctx)
+            entry_filter = function(entry, ctx) is_filetype(entry, ctx, "pandoc") end
+            --[[entry_filter = function(entry, ctx)
                 local kind = vim.bo.filetype
                 if kind == "pandoc" then
                     return false
                 end
-            end
+            end--]]
         },
     }),
     formatting = {

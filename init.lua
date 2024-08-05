@@ -8,6 +8,7 @@ require 'config.telescope'
 require("config.snippets")
 require('config.nvim_cmp')
 require("config.mason")
+--require("config.treesitter")
 
 require("binds.map_function")
 require("binds.copy")
@@ -15,6 +16,8 @@ require("binds.tree_open")
 
 local pywal = require('pywal')
 pywal.setup()
+
+--vim.treesitter.stop()
 
 require("theming.colors")
 require("theming.lualine")
@@ -81,3 +84,4 @@ require('oblique-strategies').setup{
     end,
     -- ...
 })--]]
+

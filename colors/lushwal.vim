@@ -135,8 +135,8 @@ highlight Tag guifg=#80AAE0 guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight Title guifg=#AEB2A9 guibg=NONE guisp=NONE blend=NONE gui=bold
 highlight Todo guifg=#80AAE0 guibg=#8E9AA4 guisp=NONE blend=NONE gui=NONE
 highlight TooLong guifg=#739BD4 guibg=NONE guisp=NONE blend=NONE gui=NONE
-highlight Type guifg=#80AAE0 guibg=NONE guisp=NONE blend=NONE gui=NONE
-highlight Typedef guifg=#80AAE0 guibg=NONE guisp=NONE blend=NONE gui=NONE
+highlight Type guifg=#80AAE0 guibg=NONE guisp=NONE blend=NONE gui=italic
+highlight Typedef guifg=#80AAE0 guibg=NONE guisp=NONE blend=NONE gui=italic
 highlight Underlined guifg=#739BD4 guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight VertSplit guifg=#CBDDEC guibg=#0B0F0E guisp=NONE blend=NONE gui=NONE
 highlight! link WinSeparator VertSplit
