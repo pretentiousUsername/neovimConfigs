@@ -5,8 +5,8 @@ end
 
 local function is_filetype(entry, ctx, filetype)
     local kind = vim.bo.filetype
-    if kind == filetype then
-        return false
+    if kind ~= filetype then
+        return true
     end
 end
 
@@ -78,13 +78,12 @@ cmp.setup({
     }, {
         {
             name = 'buffer',
-            entry_filter = function(entry, ctx) is_filetype(entry, ctx, "pandoc") end
-            --[[entry_filter = function(entry, ctx)
+            entry_filter = function(entry, ctx)
                 local kind = vim.bo.filetype
-                if kind == "pandoc" then
-                    return false
+                if kind ~= "pandoc" then
+                    return true
                 end
-            end--]]
+            end
         },
     }),
     formatting = {
@@ -162,6 +161,7 @@ require('cmp_pandoc').setup({
     enable_nabla = false,
   }
 })
+
 
 --[[local capabilities = require('cmp_nvim_lsp').default_capabilities()
 -- Replace <YOUR_LSP_SERVER> with each lsp server you've enabled.
