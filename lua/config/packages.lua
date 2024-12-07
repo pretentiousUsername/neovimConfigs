@@ -57,6 +57,7 @@ return require('packer').startup(function(use)
         'hrsh7th/cmp-nvim-lua',
         'saadparwaiz1/cmp_luasnip',
         'aspeddro/cmp-pandoc.nvim',
+        'hrsh7th/cmp-nvim-lsp',
     }
     use 'folke/which-key.nvim'
     use 'davidgranstrom/oblique-strategies.nvim'
