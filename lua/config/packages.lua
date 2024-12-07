@@ -44,6 +44,7 @@ return require('packer').startup(function(use)
         'ms-jpq/coq_nvim',
         'ms-jpq/coq.artifacts'
     }
+    use {'rafamadriz/friendly-snippets'}
     use {
         'L3MON4D3/LuaSnip',
         tag = 'v2.2.0',

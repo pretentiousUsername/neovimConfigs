@@ -7,7 +7,7 @@ local pywal_core = require('pywal.core')
 local colors = pywal_core.get_colors()
 local custom_theme = {
     --SpellBad({fg = '#ff0000'}),
-    Type = { gui = 'italic', fg = colors.yellow }
+    --Type({ gui = 'italic', fg = colors.yellow })
 }
 
 vim.g.lushwal_configuration = {

@@ -1,12 +1,19 @@
 require('mason').setup()
 
 require('mason-lspconfig').setup({
-    ensure_installed = { 'lua_ls', 'rust_analyzer', 'ruff_lsp' }
+    ensure_installed = { 'lua_ls', 'rust_analyzer', 'ruff_lsp', 'julials' }
 })
 
-require('lspconfig').lua_ls.setup{}
+-- Add cmp_nvim_lsp capabilities settings to lspconfig
+-- This should be executed before you configure any language server
+local lspconfig_defaults = require('lspconfig').util.default_config
+lspconfig_defaults.capabilities = vim.tbl_deep_extend(
+  'force',
+  lspconfig_defaults.capabilities,
+  require('cmp_nvim_lsp').default_capabilities()
+)
 
---require('lspconfig').ruff_lsp.setup{}
+require('lspconfig').lua_ls.setup{}
 
 require('lspconfig').pylsp.setup{
     settings = {
@@ -22,9 +29,8 @@ require('lspconfig').pylsp.setup{
     }
 }
 
---require('lspconfig').
 
 -- Julials is really dang slow
---require('lspconfig').julials.setup{
-    --julia_env_path = {}
---}
+require('lspconfig').julials.setup{
+  julia_env_path = {"/home/pines/.julia/environments/nvim-lspconfig/"}
+}

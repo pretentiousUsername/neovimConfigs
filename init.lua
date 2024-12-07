@@ -17,6 +17,8 @@ require("binds.tree_open")
 local pywal = require('pywal')
 pywal.setup()
 
+vim.opt.signcolumn = 'yes'
+
 --vim.treesitter.stop()
 
 require("theming.colors")
