@@ -1,7 +1,7 @@
 require('mason').setup()
 
 require('mason-lspconfig').setup({
-    ensure_installed = { 'lua_ls', 'rust_analyzer', 'ruff_lsp', 'julials' }
+    ensure_installed = { 'lua_ls', 'rust_analyzer', 'pylsp', 'ruff', 'julials' }
 })
 
 -- Add cmp_nvim_lsp capabilities settings to lspconfig
