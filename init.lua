@@ -21,6 +21,11 @@ vim.opt.signcolumn = 'yes'
 
 --vim.treesitter.stop()
 
+-- Enable virtual text again, since it stopped working when I updated something.
+vim.diagnostic.config({
+    virtual_text = true,
+})
+
 require("theming.colors")
 require("theming.lualine")
 

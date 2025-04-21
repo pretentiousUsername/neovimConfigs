@@ -1,7 +1,7 @@
 vim.cmd([[set cursorline]])
 vim.cmd([[set cursorlineopt=number]])
 vim.cmd.colorscheme 'lushwal'
---vim.cmd([[set colorscheme myScheme]])
+-- vim.cmd.colorscheme 'myScheme'
 
 local pywal_core = require('pywal.core')
 local colors = pywal_core.get_colors()
