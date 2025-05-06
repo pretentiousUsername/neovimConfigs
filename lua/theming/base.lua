@@ -61,8 +61,8 @@ local scheme = lush(function()
 
 		Boolean({ fg = colors.orange }),
 		Character({ fg = colors.red }),
-		Comment({ fg = colors.white, gui = "italic" }),
-		Conditional({ fg = colors.purple }),
+		Comment({ fg = colors.white, gui = "none" }),
+		Conditional({ fg = colors.red, gui = "bold" }),
 		Constant({ fg = colors.orange }),
 		Define({ fg = colors.purple }),
 		Delimiter({ fg = colors.brown }),
@@ -71,7 +71,7 @@ local scheme = lush(function()
 
 		Identifier({ fg = colors.cyan }),
 		Include({ fg = colors.blue }),
-		Keyword({ fg = colors.purple }),
+		Keyword({ fg = colors.blue }),
 
 		Label({ fg = colors.yellow }),
 		Number({ fg = colors.orange }),
@@ -115,6 +115,10 @@ local scheme = lush(function()
 
 		gitCommitOverflow({ fg = colors.red }),
 		gitCommitSummary({ fg = colors.green }),
+
+        pythonKeyword({ fg = colors.red }),
+        pythonConditional({ fg = colors.red }),
+        @comment({ gui = "None" })
 	}
 	-- selene: deny(undefined_variable)
 end)

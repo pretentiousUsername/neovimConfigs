@@ -14,8 +14,16 @@ require("binds.map_function")
 require("binds.copy")
 require("binds.tree_open")
 
-local pywal = require('pywal')
-pywal.setup()
+-- local pywal = require('pywal')
+-- pywal.setup()
+
+
+-- -- https://www.reddit.com/r/neovim/comments/15vs7jr/lazyvim_and_lushwal_help_needed/
+-- require("lushwal").add_reload_hook {
+--     vim.cmd "LushwalCompile",
+-- }
+
+
 
 vim.opt.signcolumn = 'yes'
 

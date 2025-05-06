@@ -28,7 +28,7 @@ scnvim.setup({
   },
   postwin = {
     float = {
-      enabled = false, -- floating postwin is annoying as shit.
+      enabled = true, -- Nevermind, I like it now.
     },
   },
   
